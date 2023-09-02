@@ -22,7 +22,6 @@ public class StudentController {
     //get student by id
 
     @GetMapping("get_student_by_id")
-    public Student getStudentById(@RequestParam("id") Integer id ){
-        return studentDb.get(id);
+    public Student getStudentById(@RequestParam("id") Integer id ){return studentDb.get(id);
     }
 }
